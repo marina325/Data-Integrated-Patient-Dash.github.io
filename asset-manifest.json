@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.28a4af80.js",
+    "main.js": "/static/js/main.499fd2d6.js",
     "static/media/dashboard-growth.png": "/static/media/dashboard-growth.9e985101d7d337104387.png",
+    "static/media/Sathish,Varshini.png": "/static/media/Sathish,Varshini.2558684ec8841623e03e.png",
     "static/media/Rohithprofile.png": "/static/media/Rohithprofile.b43fa07b2552b2e06609.png",
     "static/media/Nicoleprofile.png": "/static/media/Nicoleprofile.dde3c3cd2f0c470c4022.png",
+    "static/media/SeongjinProfile.png": "/static/media/SeongjinProfile.f4d348cf78651a2c52ea.png",
     "static/media/Kamenprofile.png": "/static/media/Kamenprofile.db1da8491812a96e4615.png",
     "static/media/Anjanaprofile.png": "/static/media/Anjanaprofile.e9d612b2785423b6054c.png",
     "static/media/Joshprofile.png": "/static/media/Joshprofile.7d43a4400c5a8660f818.png",
     "static/media/Avenprofile.png": "/static/media/Avenprofile.cf9cda5ec93589956ed2.png",
     "static/media/kennynguyenprofile.png": "/static/media/kennynguyenprofile.04d7415d1607574005a6.png",
     "static/media/Samiprofile.png": "/static/media/Samiprofile.264f5c94c55f92abd8d9.png",
+    "static/media/SakeefProfile.png": "/static/media/SakeefProfile.5c9213183acd8ded501e.png",
     "static/media/healthyfood.jpg": "/static/media/healthyfood.5169a7c025d4a87c454a.jpg",
     "static/media/sleep.png": "/static/media/sleep.95e6c4202736e99a55cd.png",
     "static/media/team-illustration-2.svg": "/static/media/team-illustration-2.76aa0427e037826d4453f8791ee544e3.svg",
@@ -24,9 +27,9 @@
     "static/media/logo.svg": "/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
-    "main.28a4af80.js.map": "/static/js/main.28a4af80.js.map"
+    "main.499fd2d6.js.map": "/static/js/main.499fd2d6.js.map"
   },
   "entrypoints": [
-    "static/js/main.28a4af80.js"
+    "static/js/main.499fd2d6.js"
   ]
 }
