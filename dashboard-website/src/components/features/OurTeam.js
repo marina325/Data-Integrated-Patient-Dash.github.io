@@ -59,7 +59,7 @@ const ourTeam = React.forwardRef( ({
   members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
-  description = "We are a team of Data Science students at UC San Diego (supported by a group of Bioengineering students), advised by Dr. Benjamin Smarr"
+  description = "We are a team of Bioengineering students at UC San Diego (supported by a group of Data Science students), advised by Dr. Benjamin Smarr"
 }, ref) => {
 /*
  * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -73,7 +73,7 @@ const DSCmembers = [
   {
     imageSrc: AnjanaProfile,
     title: "Anjana Sriram",
-    description: "Anjana is a graduate of UC San Diego's Halicioglu Data Science Institute. She is passionate about using data for good, and hopes to create a data-driven world that improves lives for everyone. After graduating this winter, she will be starting work as a Data Scientist for Disney streaming!"
+    description: ""
   },
   {
     imageSrc: SamiProfile,
@@ -82,22 +82,22 @@ const DSCmembers = [
   },
  { imageSrc: AvenProfile, 
     title: "Aven Huang",
-    description: "Aven is a graduate of UC San Diego’s Halicioglu Data Science Institute. She is interested in combining software engineering and data science practices to build tools. After graduation, she will begin work as a Software Engineer at Sprout Social." },
+    description: "" },
   { imageSrc: KamenProfile, 
     title: "Kamen Redfield",
-    description: "Kamen Redfield is a graduate of UC San Diego's Halicioglu Data Science Institute. His professional interests lie in Natural Language Processing and will be looking to work as a Data Scientist in this field before returning back for graduate school." },
+    description: "" },
   { imageSrc: KennyProfile, 
     title: "Kenny Nguyen",
-    description: "Kenny is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie in leveraging data science to make health care more accessible and equitable for all demographics. After graduation, he will begin work as a Data Scientist at Foundation Risk Partners." },
+    description: "" },
   { imageSrc: NicoleProfile, 
     title: "Nicole Brye",
-    description: "Nicole is a graduate of the Halicioglu Data Science Institute at UC San Diego. Her interests are at the intersection of data science and health care, and post-graduation she plans to attend graduate school." },
+    description: "" },
   { imageSrc: JoshProfile, 
     title: "Qiaoxuan (Josh) Wang",
-    description: "Qiaoxuan (Josh) is a graduate of the Halicioglu Data Science Institute at UC San Diego and an incoming Data Analyst at AT&T. He seeks to use his background in data science and project management to improve the lives of others through healthcare, infrastructure, and entrepreneurship." },
+    description: "" },
   { imageSrc: RohithProfile, 
     title: "Rohith Pillai",
-    description: "Rohith is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie somewhere between analytics and machine learning, and will be looking forward to working in this field soon after graduating." }
+    description: "" }
 ];
 
 if (!members) members = DSCmembers;
@@ -123,7 +123,7 @@ return (
             <span className="textContainer">
               <span className="title">{card.title || "Fully Secure"}</span>
               <p className="description">
-                {card.description || "Hello we need to add our info here"}
+                {card.description || ""}
               </p>
             </span>
           </Card>
