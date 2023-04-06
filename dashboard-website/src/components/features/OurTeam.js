@@ -16,6 +16,7 @@ import AnjanaProfile from "images/Anjanaprofile.png";
 import NicoleProfile from "images/Nicoleprofile.png";
 import RohithProfile from "images/Rohithprofile.png";
 import KamenProfile from "images/Kamenprofile.png";
+import SamiProfile from "images/Samiprofile.png";
 
 const Container = tw.div`relative bg-primary-800 -mx-8 px-8 text-gray-100`;
 
@@ -73,6 +74,11 @@ const DSCmembers = [
     imageSrc: AnjanaProfile,
     title: "Anjana Sriram",
     description: "Anjana is a graduate of UC San Diego's Halicioglu Data Science Institute. She is passionate about using data for good, and hopes to create a data-driven world that improves lives for everyone. After graduating this winter, she will be starting work as a Data Scientist for Disney streaming!"
+  },
+  {
+    imageSrc: SamiProfile,
+    title: "Samhita Kadali",
+    description: "Sami wants to die"
   },
  { imageSrc: AvenProfile, 
     title: "Aven Huang",
