@@ -17,6 +17,9 @@ import NicoleProfile from "images/Nicoleprofile.png";
 import RohithProfile from "images/Rohithprofile.png";
 import KamenProfile from "images/Kamenprofile.png";
 import SamiProfile from "images/Samiprofile.png";
+import VarshiniProfile from "images/Sathish,Varshini.png";
+import SakeefProfile from "images/SakeefProfile.png";
+import SeongjinProfile from "images/SeongjinProfile.png"
 
 const Container = tw.div`relative bg-primary-800 -mx-8 px-8 text-gray-100`;
 
@@ -71,14 +74,29 @@ const ourTeam = React.forwardRef( ({
 
 const DSCmembers = [
   {
-    imageSrc: AnjanaProfile,
-    title: "Anjana Sriram",
-    description: ""
-  },
-  {
     imageSrc: SamiProfile,
     title: "Samhita Kadali",
     description: "Sami wants to die"
+  },
+  {
+    imageSrc: VarshiniProfile,
+    title: "Varshini Sathish",
+    description: "Varshini is tired"
+  },
+  {
+    imageSrc: SeongjinProfile,
+    title: "Seongjin Park",
+    description: "Seongjin is funny"
+  },
+  {
+    imageSrc: SakeefProfile,
+    title: "Sakeef Sayeed",
+    description: "Sakeef is here"
+  },
+  {
+    imageSrc: AnjanaProfile,
+    title: "Anjana Sriram",
+    description: ""
   },
  { imageSrc: AvenProfile, 
     title: "Aven Huang",
