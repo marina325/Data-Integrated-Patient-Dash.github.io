@@ -8,6 +8,7 @@ import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 import Footer from "components/footers/Footer.js";
 import TableauEmbed from "components/TableauEmbed.js";
 import TableauScoresEmbed from "components/TableauScoresEmbed";
+import TableauEmbedAH from "components/TableauEmbedAH"
 import sleepIllustrationImageSrc from "images/sleep.png"
 import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
@@ -21,7 +22,8 @@ export default () => {
       <OurTeam  ref={ourTeamRef}/>
       <TableauScoresEmbed ref={dashboardRef}/>
       <TableauEmbed />
-      <MainFeature 
+      <TableauEmbedAH />
+      <MainFeature
         subheading=""
         heading="The Importance of Sleep"
         imageSrc={sleepIllustrationImageSrc}
