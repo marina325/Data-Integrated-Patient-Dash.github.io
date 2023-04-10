@@ -9,6 +9,7 @@ import Footer from "components/footers/Footer.js";
 import TableauEmbed from "components/TableauEmbed.js";
 import TableauScoresEmbed from "components/TableauScoresEmbed";
 import TableauEmbedAH from "components/TableauEmbedAH"
+import TableauEmbedOuraHeartRate from "components/TableauEmbedOuraHeartRate";
 import sleepIllustrationImageSrc from "images/sleep.png"
 import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
@@ -23,6 +24,7 @@ export default () => {
       <TableauScoresEmbed ref={dashboardRef}/>
       <TableauEmbed />
       <TableauEmbedAH />
+      <TableauEmbedOuraHeartRate />
       <MainFeature
         subheading=""
         heading="The Importance of Sleep"
