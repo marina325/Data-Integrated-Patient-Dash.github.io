@@ -19,7 +19,9 @@ import KamenProfile from "images/Kamenprofile.png";
 import SamiProfile from "images/Samiprofile.png";
 import VarshiniProfile from "images/Sathish,Varshini.png";
 import SakeefProfile from "images/SakeefProfile.png";
-import SeongjinProfile from "images/SeongjinProfile.png"
+import SeongjinProfile from "images/SeongjinProfile.png";
+import BenProfile from "images/BenProfile.png"
+
 
 const Container = tw.div`relative bg-primary-800 -mx-8 px-8 text-gray-100`;
 
@@ -94,28 +96,33 @@ const DSCmembers = [
     description: "Sakeef is here"
   },
   {
-    imageSrc: AnjanaProfile,
-    title: "Anjana Sriram",
+    imageSrc: BenProfile,
+    title: "Dr. Benjamin Smarr",
     description: ""
   },
- { imageSrc: AvenProfile, 
-    title: "Aven Huang",
-    description: "" },
-  { imageSrc: KamenProfile, 
-    title: "Kamen Redfield",
-    description: "" },
-  { imageSrc: KennyProfile, 
-    title: "Kenny Nguyen",
-    description: "" },
-  { imageSrc: NicoleProfile, 
-    title: "Nicole Brye",
-    description: "" },
-  { imageSrc: JoshProfile, 
-    title: "Qiaoxuan (Josh) Wang",
-    description: "" },
-  { imageSrc: RohithProfile, 
-    title: "Rohith Pillai",
-    description: "" }
+ //  {
+ //    imageSrc: AnjanaProfile,
+ //    title: "Anjana Sriram",
+ //    description: ""
+ //  },
+ // { imageSrc: AvenProfile,
+ //    title: "Aven Huang",
+ //    description: "" },
+ //  { imageSrc: KamenProfile,
+ //    title: "Kamen Redfield",
+ //    description: "" },
+ //  { imageSrc: KennyProfile,
+ //    title: "Kenny Nguyen",
+ //    description: "" },
+ //  { imageSrc: NicoleProfile,
+ //    title: "Nicole Brye",
+ //    description: "" },
+ //  { imageSrc: JoshProfile,
+ //    title: "Qiaoxuan (Josh) Wang",
+ //    description: "" },
+ //  { imageSrc: RohithProfile,
+ //    title: "Rohith Pillai",
+ //    description: "" }
 ];
 
 if (!members) members = DSCmembers;
