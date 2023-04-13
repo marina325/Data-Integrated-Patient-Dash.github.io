@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.3881d38e.js",
+    "main.js": "/static/js/main.3bfbc6ac.js",
     "static/media/dashboard-growth.png": "/static/media/dashboard-growth.9e985101d7d337104387.png",
     "static/media/Sathish,Varshini.png": "/static/media/Sathish,Varshini.2558684ec8841623e03e.png",
     "static/media/Rohithprofile.png": "/static/media/Rohithprofile.b43fa07b2552b2e06609.png",
@@ -15,6 +15,7 @@
     "static/media/SakeefProfile.png": "/static/media/SakeefProfile.5c9213183acd8ded501e.png",
     "static/media/healthyfood.jpg": "/static/media/healthyfood.5169a7c025d4a87c454a.jpg",
     "static/media/sleep.png": "/static/media/sleep.95e6c4202736e99a55cd.png",
+    "static/media/BenProfile.png": "/static/media/BenProfile.1a7f54983883462ab569.png",
     "static/media/team-illustration-2.svg": "/static/media/team-illustration-2.76aa0427e037826d4453f8791ee544e3.svg",
     "static/media/dot-pattern.svg": "/static/media/dot-pattern.ee6f4f0e6654d6e38850896165f9dc36.svg",
     "static/media/dashboard_icon.svg": "/static/media/dashboard_icon.94280b0561ab18c885f0b8de16271dcf.svg",
@@ -27,9 +28,9 @@
     "static/media/logo.svg": "/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
-    "main.3881d38e.js.map": "/static/js/main.3881d38e.js.map"
+    "main.3bfbc6ac.js.map": "/static/js/main.3bfbc6ac.js.map"
   },
   "entrypoints": [
-    "static/js/main.3881d38e.js"
+    "static/js/main.3bfbc6ac.js"
   ]
 }
