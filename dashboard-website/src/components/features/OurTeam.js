@@ -64,7 +64,8 @@ const ourTeam = React.forwardRef( ({
   members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
-  description = "We are a team of Bioengineering students at UC San Diego (supported by a group of Data Science students), advised by Dr. Benjamin Smarr"
+  description = "We are a team of Bioengineering students at UC San Diego, supported by a group of Data Science collaborators, advised by Dr. Benjamin Smarr.",
+  description2 = "Data Science Collaborators: Nicole Brye, Aven Huang, Kenny Nguyen, Rohith Pillai, Kamen Redfield, Anjana Sriram, Qiaoxuan Wang"
 }, ref) => {
 /*
  * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -125,6 +126,9 @@ const DSCmembers = [
  //    description: "" }
 ];
 
+
+
+
 if (!members) members = DSCmembers;
 
 return (
@@ -154,6 +158,7 @@ return (
           </Card>
         </Column>
       ))}
+      {description2 && <Description>{description2}</Description>}
     </ThreeColumnContainer>
   </Container>
 );
