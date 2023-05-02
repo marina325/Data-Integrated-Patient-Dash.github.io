@@ -5,7 +5,7 @@ const { tableau } = window;
 
 function TableauEmbedOura1() {
     const ref = useRef(null);
-    const url = "https://public.tableau.com/app/profile/seongjin.park5546/viz/T_HeartRate/Pearson?publish=yes";
+    const url = "https://public.tableau.com/views/T_HeartRate/Pearson?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
 
     function initViz () {
         new tableau.Viz(ref.current, url);
