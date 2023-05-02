@@ -5,7 +5,7 @@ const { tableau } = window;
 
 function TableauEmbedOura5() {
     const ref = useRef(null);
-    const url = "https://public.tableau.com/views/T_HeartRate/HeartRate?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
+    const url = "https://public.tableau.com/app/profile/seongjin.park5546/viz/T_HeartRate/HeartRate?publish=yes";
 
     function initViz () {
         new tableau.Viz(ref.current, url);

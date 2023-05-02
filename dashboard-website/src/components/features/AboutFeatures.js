@@ -47,7 +47,7 @@ export default () => {
         "https://drive.google.com/uc?export=view&id=1_K39xSShjSusPD0QO2Md0XLJPOI0nC9j",
       title: "Introduction",
       description:
-        "As health sensor technology becomes more advanced and common amongst the general population, we as data scientists are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status."
+        "As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status."
     },
 
     {
