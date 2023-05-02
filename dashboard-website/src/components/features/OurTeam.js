@@ -79,22 +79,22 @@ const DSCmembers = [
   {
     imageSrc: SamiProfile,
     title: "Samhita Kadali",
-    description: "Sami wants to die"
+    description: ""
   },
   {
     imageSrc: VarshiniProfile,
     title: "Varshini Sathish",
-    description: "Varshini is tired"
+    description: ""
   },
   {
     imageSrc: SeongjinProfile,
     title: "Seongjin Park",
-    description: "Seongjin is funny"
+    description: ""
   },
   {
     imageSrc: SakeefProfile,
     title: "Sakeef Sayeed",
-    description: "Sakeef is here"
+    description: ""
   },
   {
     imageSrc: BenProfile,

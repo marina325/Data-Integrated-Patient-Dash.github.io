@@ -33,34 +33,34 @@ export default ({
   description = "MedDash was created to provide both providers and patients with a summary of their health data that is both informative and easy to read",
   faqs = [
     {
-      question: "What metrics do the dashboards provide?",
+      question: "What does MedDash currently provide?",
       answer:
-        "The dashboards currently support metrics concerning sleep (hours slept and sleep scores) as well as diet (calories per day)"
+        "This dashboard currently provides a 1) Pearson Correlation graph that enables you to select any 2 out of 25 metrics available from Oura Ring data and obtain the Pearson Correlation Coefficient between the 2 selected metrics; 2) Longitudinal Plot for Oura Ring data that enables you to select one metric and see how it trended for a user-selected month/year; 3) Workout Plot that enables you to see the frequency of specified workouts from Oura Ring data over user-selected months/years; 4) Life Events plot that shows all user-tracked life events from Oura Ring data over a user-specified time interval; 5) Recent Heart Rate plot that shows a user’s heart rate data obtained from Oura Ring over a 24 hour time window; and 6) Apple Health Longitudinal Plots that enables the simultaneous viewing of various health metrics automatically tracked by Apple Health over a user-specified month/year."
     },
     {
       question: "Where does the data come from?",
       answer:
-        "MedDash compiles data from a multitude of sources such as Oura Rings, Apple Watches, and medical records through Epic Systems"
+        "MedDash is a health and wellness platform that compiles data from a variety of sources to provide a comprehensive view of your health. This includes data related to activity levels, sleep patterns, and medical history. For example, the platform can integrate with Apple Health, which tracks a range of health data such as heart rate, steps taken, and calories burned. In addition, data related to life events and workouts can be obtained from devices such as the Oura Ring. By bringing together these various sources of data, MedDash enables users to gain valuable insights into their health and make informed decisions about their wellness."
     },
     {
       question: "Can MedDash be viewed on a mobile app?",
       answer:
-        "For the time being, there is no app for the dashboards. However, you may access this website on your phone to view them."
+        "At the moment, there is no app available for accessing the dashboards. This applies to both IOS and Android users. However, you can still view the dashboards by accessing the website on your phone. It's important to note that if you choose to view the website on your phone, please ensure that you display it horizontally to optimize the viewing experience. We are constantly working to improve our user experience, and we appreciate your patience as we work on developing an app for our dashboards. In the meantime, please do not hesitate to contact us if you have any questions or concerns."
     },
     {
       question: "What technology was used to create MedDash?",
       answer:
-        "Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages."
+        "Google Cloud Functions were used to develop pipelines for the automated extraction and parsing of health data from Oura Ring and Apple Health. Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages."
     },
     {
       question: "What makes MedDash unique or different from existing dashboards?",
       answer:
-        "MedDash is different due to its integration of data from multiple wearable health devices with predictive health features into a single platform."
+        "MedDash, a dashboard that integrates multiple health data sources, distinguishes itself from existing medical dashboards through its unique features as it consolidates data from various healthcare systems and devices, providing a comprehensive view of a patient's health. It excels in real-time data aggregation, enabling continuous monitoring and proactive care management. Equipped with advanced analytics and decision support tools, MedDash empowers healthcare providers to derive meaningful insights and make data-driven decisions. Prioritizing interoperability and cross-platform accessibility, MedDash ensures seamless data exchange and access to patient information from anywhere. Its customizable and scalable nature allows healthcare organizations to tailor MedDash to their specific needs while effectively handling large volumes of data."
     },
     {
       question: "What features would be added to MedDash in the future?",
       answer:
-        "Ideally, MedDash would incorporate EHR records as well as an automated data collection, uploading, and visualization pipeline.",
+        "Ideally, MedDash will incorporate EHR records (such as those present in Epic) as well as an automated data collection, uploading, and visualization pipeline for various other wearable devices and patients' personal calendars (such as Google Calendar).",
     }
   ]
 }) => {
