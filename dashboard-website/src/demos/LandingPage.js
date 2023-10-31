@@ -2,6 +2,7 @@ import { React, useRef }  from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 import OurTeam from "components/features/OurTeam";
+import NewTeam from "components/features/NewTeam"
 import MainFeature from "components/features/TwoColWithButton.js";
 import GoodDietFeature from "components/features/GoodDietFeature.js";
 import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
@@ -21,11 +22,12 @@ import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
 export default () => {
   const ourTeamRef = useRef(null);
+  const newTeamRef = useRef(null)
   const dashboardRef = useRef(null);
   return (
     <AnimationRevealPage>
       <Hero ourTeamRef={ourTeamRef} dashboardRef={dashboardRef}/>
-      <OurTeam  ref={ourTeamRef}/>
+      <Hero newTeamRef={newTeamRef} dashboardRef={dashboardRef}/>
       {/*<TableauScoresEmbed ref={dashboardRef}/>*/}
       <TableauEmbedOura1 />
       {/*<TableauEmbed />*/}
@@ -50,6 +52,8 @@ export default () => {
       />
       {/* <Testimonial /> */}
       <FAQ />
+      <NewTeam ref={newTeamRef}/>
+      <OurTeam  ref={ourTeamRef}/>
       {/* <Footer /> */}
     </AnimationRevealPage>
   );

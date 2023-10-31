@@ -9,17 +9,7 @@ import { SectionDescription } from "components/misc/Typography.js";
 import defaultCardImage from "images/shield-icon.svg";
 
 
-import JoshProfile from "images/Joshprofile.png";
-import AvenProfile from "images/Avenprofile.png";
-import KennyProfile from "images/kennynguyenprofile.png";
-import AnjanaProfile from "images/Anjanaprofile.png";
-import NicoleProfile from "images/Nicoleprofile.png";
-import RohithProfile from "images/Rohithprofile.png";
-import KamenProfile from "images/Kamenprofile.png";
-import SamiProfile from "images/Samiprofile.png";
-import VarshiniProfile from "images/Sathish,Varshini.png";
-import SakeefProfile from "images/SakeefProfile.png";
-import SeongjinProfile from "images/SeongjinProfile.png";
+import MelissaProfile from "images/MelissaProfile.png"
 import BenProfile from "images/BenProfile.png"
 
 
@@ -60,12 +50,12 @@ const Card = styled.div`
   }
 `;
 
-const ourTeam = React.forwardRef( ({
+const newTeam = React.forwardRef( ({
   members = null,
-  heading = "Previous Members",
+  heading = "New Team Members",
   subheading = "University of California, San Diego",
   description = "We are a team of Bioengineering students at UC San Diego, supported by a group of Data Science collaborators, advised by Dr. Benjamin Smarr.",
-  description2 = "Data Science Collaborators: Nicole Brye, Aven Huang, Kenny Nguyen, Rohith Pillai, Kamen Redfield, Anjana Sriram, Qiaoxuan Wang"
+  description2 = "Data Science Collaborators: "
 }, ref) => {
 /*
  * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -77,49 +67,35 @@ const ourTeam = React.forwardRef( ({
 
 const DSCmembers = [
   {
-    imageSrc: SamiProfile,
-    title: "Samhita Kadali",
+    title: "Jessica Fong",
     description: ""
   },
   {
-    imageSrc: VarshiniProfile,
-    title: "Varshini Sathish",
+    title: "Owen Guan",
     description: ""
   },
   {
-    imageSrc: SeongjinProfile,
-    title: "Seongjin Park",
+    title: "Ruchi Kamboj",
     description: ""
   },
   {
-    imageSrc: SakeefProfile,
-    title: "Sakeef Sayeed",
+    title: "Shreya Nagesh",
     description: ""
   },
-
- //  {
- //    imageSrc: AnjanaProfile,
- //    title: "Anjana Sriram",
- //    description: ""
- //  },
- // { imageSrc: AvenProfile,
- //    title: "Aven Huang",
- //    description: "" },
- //  { imageSrc: KamenProfile,
- //    title: "Kamen Redfield",
- //    description: "" },
- //  { imageSrc: KennyProfile,
- //    title: "Kenny Nguyen",
- //    description: "" },
- //  { imageSrc: NicoleProfile,
- //    title: "Nicole Brye",
- //    description: "" },
- //  { imageSrc: JoshProfile,
- //    title: "Qiaoxuan (Josh) Wang",
- //    description: "" },
- //  { imageSrc: RohithProfile,
- //    title: "Rohith Pillai",
- //    description: "" }
+  {
+    imageSrc: MelissaProfile,
+    title: "Melissa Osheroff",
+    description: ""
+  },
+  {
+    title: "Marina Xu",
+    description: ""
+  },
+  {
+    imageSrc: BenProfile,
+    title: "Dr. Benjamin Smarr",
+    description: ""
+  },
 ];
 
 
@@ -160,4 +136,4 @@ return (
 );
 });
 
-export default ourTeam;
+export default newTeam;
