@@ -26,7 +26,7 @@ export default () => {
   const dashboardRef = useRef(null);
   return (
     <AnimationRevealPage>
-      <Hero ourTeamRef={ourTeamRef} dashboardRef={dashboardRef}/>
+      {/*<Hero ourTeamRef={ourTeamRef} dashboardRef={dashboardRef}/> */}
       <Hero newTeamRef={newTeamRef} dashboardRef={dashboardRef}/>
       {/*<TableauScoresEmbed ref={dashboardRef}/>*/}
       <TableauEmbedOura1 />
