@@ -26,8 +26,9 @@ Pip is necessary to download dependencies:<br>
 If NodeJS is not currently in your local system run the following command: 'pip install nodejs' (replace pip with pip3 for macOS)<br> 
 NodeJS is required to run required javascript files.<br>
 
-To install all required dependencies, run: 'npm install'
+Once in the Data-Integrated-Patient-Dash folder, cd to dashboard-website
 
+Now, to install all required dependencies, run: 'npm install'
 
 ### Testing the Code
-Once everything is installed we can run 'yarn start' in order to run the dashboard with the patient data we currently have. 
+Once everything is installed we can run 'npm start' in order to run the dashboard with the patient data we currently have. 
