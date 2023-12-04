@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "treact": "file:dashboard-website"
+  }
+}
