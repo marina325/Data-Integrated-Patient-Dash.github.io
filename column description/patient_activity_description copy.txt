@@ -1,0 +1,183 @@
+activity.summary_date
+Type: String
+Format: YYYY-MM-DD
+Date when the activity period started. Oura activity period is from 4 AM to 3:59 AM user's local time.
+
+activity.day_start
+Type: String
+Format: Date time
+UTC time when the activity day began. Oura activity day is usually from 4AM to 4AM local time.
+
+activity.day_end
+Type: String
+
+Format: Date time UTC time when the activity day ended. Oura activity day is usually from 4AM to 4AM local time.
+
+activity.score
+Type: Int
+Range: 1-100, or 0 if not available.
+Activity score provides an estimate how well recent physical activity has matched ring user's needs. It is calculated as a weighted average of activity score contributors that represent one aspect of suitability of the activity each. The contributor values are also available as separate parameters.
+
+activity.score_stay_active
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates how well the ring user has managed to avoid of inactivity (sitting or standing still) during last 24 hours. The more inactivity, the lower contributor value.
+
+The contributor value is 100 when inactive time during past 24 hours is below 5 hours. The contributor value is above 95 when inactive time during past 24 hours is below 7 hours.
+
+The weight of activity.score_stay_active in activity score calculation is 0.15.
+
+activity.score_move_every_hour
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates how well the ring user has managed to avoid long periods of inactivity (sitting or standing still) during last 24 hours. The contributor includes number of continuous inactive periods of 60 minutes or more (excluding sleeping). The more long inactive periods, the lower contributor value.
+
+The contributor value is 100 when no continuous inactive periods of 60 minutes or more have been registered. The contributor value is above 95 when at most one continuous inactive period of 60 minutes or more has been registered.
+
+The weight of activity.score_move_every_hour in activity score calculation is 0.10.
+
+activity.score_meet_daily_targets
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates how often the ring user has reached his/her daily activity target during seven last days (100 = six or seven times, 95 = five times).
+
+The weight of activity.score_meet_daily_targets in activity score calculation is 0.25.
+
+activity.score_training_frequency
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates how regularly the ring user has had physical exercise the ring user has got during last seven days.
+
+The contributor value is 100 when the user has got more than 100 minutes of medium or high intensity activity on at least four days during past seven days. The contributor value is 95 when the user has got more than 100 minutes of medium or high intensity activity on at least three days during past seven days.
+
+The weight of activity.score_training_frequency in activity score calculation is 0.10.
+
+activity.score_training_volume
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates how much physical exercise the ring user has got during last seven days.
+
+The contributor value is 100 when thes sum of weekly MET minutes is over 2000. The contributor value is 95 when the sum of weekly MET minutes is over 750. There is a weighting function so that the effect of each day gradually disappears.
+
+The weight of activity.score_training_volume in activity score calculation is 0.15.
+
+activity.score_recovery_time
+Type: Int
+Range: 1-100, or 0 if not available.
+This activity score contributor indicates if the user has got enough recovery time during last seven days.
+
+The contributor value is 100 when: 1. The user has got at least two recovery days during past 7 days. 2. No more than two days elapsed after the latest recovery day.
+
+The contributor value is 95 when: 1. The user has got at least one recovery day during past 7 days. 2. No more than three days elapsed after the latest recovery day.
+
+Here a day is considered as a recovery day when amount of high intensity activity did not exceed 100 MET minutes and amount of medium intensity activity did not exceed 200 MET minutes. The exact limits will be age and gender dependent.
+
+The weight of activity.score_recovery_time in activity score calculation is 0.25.
+
+activity.daily_movement
+Type: Int
+Unit: meters
+Daily physical activity as equal meters i.e. amount of walking needed to get the same amount of activity.
+
+activity.non_wear
+Type: Int
+Unit: minutes
+Number of minutes during the day when the user was not wearing the ring. Can be used as a proxy for data accuracy, i.e. how well the measured physical activity represents actual total activity of the ring user.
+
+activity.rest
+Type: Int
+Unit: minutes
+Number of minutes during the day spent resting i.e. sleeping or lying down (average MET level of the minute is below 1.05).
+
+activity.inactive
+Type: Int
+Unit: minutes
+Number of inactive minutes (sitting or standing still, average MET level of the minute between 1.05 and 2) during the day.
+
+activity.inactivity_alerts
+Type: Int
+Number of continuous inactive periods of 60 minutes or more during the day.
+
+activity.low
+Type: Int
+Unit: minutes
+Number of minutes during the day with low intensity activity (e.g. household work, average MET level of the minute between 2 and age dependent limit).
+
+activity.medium
+Type: Int
+Unit: minutes
+Number of minutes during the day with medium intensity activity (e.g. walking). The upper and lower MET level limits for medium intensity activity depend on user's age and gender.
+
+activity.high
+Type: Int
+Unit: minutes
+Number of minutes during the day with high intensity activity (e.g. running). The lower MET level limit for high intensity activity depends on user's age and gender.
+
+activity.steps
+Type: Int
+Total number of steps registered during the day.
+
+activity.cal_total
+Type: Int
+Unit: kilocalories
+Total energy consumption during the day including Basal Metabolic Rate in kilocalories.
+
+activity.cal_active
+Type: Int
+Unit: kilocalories
+Energy consumption caused by the physical activity of the day in kilocalories.
+
+activity.met_min_inactive
+Type: Int
+Unit: MET minutes
+Total MET minutes accumulated during inactive minutes of the day.
+
+activity.met_min_low
+Type: Int
+Unit: MET minutes
+Total MET minutes accumulated during low intensity activity minutes of the day.
+
+activity.met_min_medium_plus
+Type: Int
+Unit: MET minutes
+Total MET minutes accumulated during medium and high intensity activity minutes of the day.
+
+activity.met_min_medium
+Type: Int
+Unit: MET minutes
+Total MET minutes accumulated during medium intensity activity minutes of the day.
+
+activity.met_min_high
+Type: Int
+Unit: MET minutes
+Total MET minutes accumulated during high intensity activity minutes of the day.
+
+activity.average_met
+Type: Float
+Average MET level during the whole day.
+
+activity.class_5min
+Type: String
+A string that contains one character for each starting five minutes of the activity period, so that the first period starts from 4 AM local time:
+
+0: Non-wear
+1: Rest (MET level below 1.05)
+2: Inactive (MET level between 1.05 and 2)
+3: Low intensity activity (MET level between 2 and age/gender dependent limit)
+4: Medium intensity activity
+5: High intensity activity
+activity.met_1min
+Type: array of floats
+Average MET level for each minute of the activity period, starting from 4 AM local time.
+
+activity.rest_mode_state
+Type: Int
+Range: 0-4
+Note: Missing for days before Rest Mode was available.
+Indicates whether Rest Mode was enabled or recently enabled. The Rest Mode state can be one of five states:
+
+0: Off
+1: Entering Rest Mode
+2: Rest Mode
+3: Entering recovery
+4: Recovering

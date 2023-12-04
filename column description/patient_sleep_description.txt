@@ -1,0 +1,152 @@
+sleep.summary_date
+Type: String
+Format: YYYY-MM-DD
+One day prior to the date when the sleep period ended. Note: this is one day before the date that is shown in the apps.
+
+sleep.period_id
+Type: Int
+Index of the sleep period among sleep periods with the same summary_date, where 0 = first sleep period of the day.
+
+sleep.timezone
+Type: Int
+Unit: Minutes
+Timezone offset from UTC as minutes. For example, EEST (Eastern European Summer Time, +3h) is 180. PST (Pacific Standard Time, -8h) is -480. Note that timezone information is also available in the datetime values themselves, see for example.bedtime_start
+
+sleep.bedtime_start
+Type: String
+Format: Date time
+Local time when the sleep period started
+
+sleep.bedtime_end
+Type: String
+Format: Date time
+Local time when the sleep period ended.
+
+sleep.duration
+Type: Int
+Unit: seconds
+Total duration of the sleep period (sleep.duration = sleep.bedtime_end - sleep.bedtime_start).
+
+sleep.total
+Type: Int
+Unit: seconds
+Total amount of sleep registered during the sleep period (sleep.total = sleep.rem + sleep.light + sleep.deep).
+
+sleep.awake
+Type: Int
+Unit: seconds
+Total amount of awake time registered during the sleep period.
+
+sleep.rem
+Type: Int
+Unit: seconds
+Total amount of REM sleep registered during the sleep period.
+
+sleep.light
+Type: Int
+Unit: seconds
+Total amount of light (N1 or N2) sleep registered during the sleep period.
+
+sleep.deep
+Type: Int
+Unit: seconds
+Total amount of deep (N3) sleep registered during the sleep period.
+
+sleep.hr_lowest
+Type: Int
+Unit: beats per minute
+The lowest heart rate (5 minutes sliding average) registered during the sleep period.
+
+sleep.hr_average
+Type: Int
+Unit: beats per minute
+The average heart rate registered during the sleep period.
+
+sleep.hr_5min
+Type: Array of integers
+Unit: beats per minute
+Average heart rate for each beginning 5 minutes of the sleep period, the first period starting from sleep.bedtime_start.
+
+sleep.efficiency
+Type: Int
+Range: 0-100%
+Sleep efficiency is the percentage of the sleep period spent asleep (100% * sleep.total / sleep.duration).
+
+sleep.onset_latency
+Type: Int
+Unit: seconds
+Detected latency from bedtime_start to the beginning of the first five minutes of persistent sleep.
+
+sleep.midpoint_time
+Type: Int
+Unit: seconds
+The time in seconds from the start of sleep to the midpoint of sleep. The midpoint ignores awake periods.
+
+sleep.restless
+Type: Integer
+Unit: %
+Restlessness of the sleep time, i.e. percentage of sleep time when the user was moving.
+
+sleep.temperature_delta
+Type: Float
+Unit: Celsius
+Skin temperature deviation from the long-term temperature average.
+
+sleep.breath_average
+Type: Float
+Unit: breaths per minute
+Average respiratory rate.
+
+sleep.score
+Type: Int
+Range: 1-100, or 0 if not available.
+Sleep score represents overall sleep quality during the sleep period. It is calculated as a weighted average of sleep score contributors that represent one aspect of sleep quality each. The sleep score contributor values are also available as separate parameters.
+
+sleep.score_total
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents total sleep time's (see sleep.total) contribution for sleep quality.
+
+sleep.score_rem
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents REM sleep time's (see sleep.rem) contribution for sleep quality.
+
+sleep.score_deep
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents deep (N3) sleep time's (see sleep.deep) contribution for sleep quality.
+
+sleep.score_efficiency
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents sleep efficiency's (see sleep.efficiency) contribution for sleep quality.
+
+sleep.score_latency
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents sleep onset latency's (see sleep.onset_latency) contribution for sleep quality.
+
+sleep.score_disturbances
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents sleep disturbances' contribution for sleep quality.
+
+sleep.score_alignment
+Type: Int
+Range: 1-100, or 0 if not available.
+Represents circadian alignment's contribution for sleep score.
+
+sleep.hypnogram_5min
+Type: String
+A string that contains one character for each starting five minutes of the sleep period, so that the first period starts from sleep.bedtime.start: - '1' = deep (N3) sleep - '2' = light (N1 or N2) sleep - '3' = REM sleep - '4' = awake
+
+sleep.rmssd
+Type: Int
+Unit: milliseconds
+The average HRV calculated with rMSSD method.
+
+sleep.rmssd_5min
+Type: Array of integers
+Unit: milliseconds
+The average HRV (calculated using rMSSD method) for each beginning 5 minutes of the sleep period, the first period starting from sleep.bedtime_start.

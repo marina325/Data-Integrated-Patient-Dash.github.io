@@ -1,0 +1,59 @@
+Note: readiness data is not yet fully documented.
+
+readiness.summary_date
+Type: String
+Format: YYYY-MM-DD
+One day prior to the date when the sleep period (that this readiness score takes into account) ended. Note: this is one day before the date that is shown in the apps.
+
+readiness.period_id
+Type: Int
+Index of the sleep period among sleep periods with the same summary_date, where 0 = first sleep period of the day. Each readinesss calculation is associated with a sleep period.
+
+readiness.score
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_previous_night
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_sleep_balance
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_previous_day
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_activity_balance
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_resting_hr
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_hrv_balance
+Type: Int
+Range: 1-100, or 0 if not available.
+Note: May be missing. Not available for days before HRV was part of readiness score.
+
+readiness.score_recovery_index
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.score_temperature
+Type: Int
+Range: 1-100, or 0 if not available.
+
+readiness.rest_mode_state
+Type: Int
+Range: 0-4
+Note: Missing for days before Rest Mode was available.
+Indicates whether Rest Mode was enabled or recently enabled. The Rest Mode state can be one of five states:
+
+0: Off
+1: Entering Rest Mode
+2: Rest Mode
+3: Entering recovery
+4: Recovering
