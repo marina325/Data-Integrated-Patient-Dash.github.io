@@ -23,12 +23,20 @@ Pip is necessary to download dependencies:<br>
   run this command: 'curl https://bootstrap.pypa.io/get-pip.py | python3'
 
 ### NodeJS
-If NodeJS is not currently in your local system run the following command: 'pip install nodejs' (replace pip with pip3 for macOS)<br> 
+Node JS is currently required to run the dashboard locally. <br> If NodeJS is not currently in your local system head to the following website https://nodejs.org/en/download and download the most current version of nodejs for your system.<br> 
 NodeJS is required to run required javascript files.<br>
 
-Once in the Data-Integrated-Patient-Dash folder, cd to dashboard-website
+If you're running an IDE such as VSCode, restart it in order for nodejs to begin working. <br> Once in the Data-Integrated-Patient-Dash folder, cd to dashboard-website
 
 Now, to install all required dependencies, run: 'npm install'
 
 ### Testing the Code
-Once everything is installed we can run 'npm start' in order to run the dashboard with the patient data we currently have. 
+Once everything is installed we can run 'npm start' in order to run the dashboard with the patient data we currently have.
+
+### Links to API
+For more information, these are the links to the Oura API, where a good amount of our data is sourced from. 
+
+Patient Readiness Data: https://cloud.ouraring.com/docs/readiness <br>
+Patient Sleep Data: https://cloud.ouraring.com/docs/sleep <br>
+Patient Activity Data: https://cloud.ouraring.com/docs/activity <br>
+Patient Bedtime Data: https://cloud.ouraring.com/docs/bedtime <br>
