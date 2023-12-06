@@ -21,10 +21,18 @@ NodeJS is required to run required javascript files.<br>
 
 If you're running an IDE such as VSCode, restart it in order for nodejs to begin working. <br>
 
-Now, to install all required dependencies, run: 'make install'
+#### MacOS
+Now, to install all required dependencies, run: 'make install' <br>
 
-### Testing the Code
+##### Running the Dashboard
 Once everything is installed we can run 'make start' in order to run the dashboard with the patient data we currently have.
+
+#### Windows
+Now, to install all required dependencies, once in the correct directory("Data-Integrated-Patient-Dash.github.io") cd 'dashboard-website' then type 'npm install'. This should install all required dependencies <br>
+
+##### Running the Dashboard 
+Once everything is installed we can run 'npm start' in order to run the dashboard with the patient data we currently have.<br>
+
 
 ### Links to API
 For more information, these are the links to the Oura API, where a good amount of our data is sourced from. 
