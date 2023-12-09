@@ -26,6 +26,11 @@ Creating a virtual environment and installing Python dependencies:<br>
 In the main directory ("Data-Integrated-Patient-Dash.github.io"), type `source venv/Scripts/activate` in order to enter the virtual environment.<br>  You'll know because the left of your terminal should now have something like '(venv)'.<br>
 From here type `pip install -r requirements.txt` in order to install all required Python dependencies. <br>
 
+Cleaning, Prepping, Testing Data with Makefile:<br>
+- To clean data, type `make clean`
+- To prep data for plotting, type `make prep`
+- To test data, type `make test`
+
 Now, to install all required JavaScript dependencies, type `make install` <br>
 
 ##### Running the Dashboard
@@ -42,6 +47,11 @@ If there is an issue running this code, you need to change your ExecutionPolicy.
 - Finally, type `Set-ExecutionPolicy Default -Scope Process` to reset your ExecutionPolicy to default settings.
 - You should be in the virtual environment. You'll know because the left of your terminal should now have something like '(venv)'. <br>
 From here type `pip install -r requirements.txt` in order to install all required Python dependencies. <br>
+
+Cleaning, Prepping, Testing Data:<br>
+- To clean data, type `python run.py clean`
+- To prep data for plotting, type `python run.py prep`
+- To test data, type `python run.py test`
 
 Now, to install all required JavaScript dependencies, once in the correct directory("Data-Integrated-Patient-Dash.github.io") type `cd dashboard-website` then `npm install`. This should install all required dependencies <br>
 
