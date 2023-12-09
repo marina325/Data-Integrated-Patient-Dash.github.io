@@ -6,5 +6,5 @@ clean:
 	python3 run.py clean
 prep:
 	python3 run.py prep
-test:
+test-:
 	python3 run.py test

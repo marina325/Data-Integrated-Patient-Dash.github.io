@@ -29,7 +29,7 @@ From here type `pip install -r requirements.txt` in order to install all require
 Cleaning, Prepping, Testing Data with Makefile:<br>
 - To clean data, type `make clean`
 - To prep data for plotting, type `make prep`
-- To test data, type `make test`
+- To test data, type `make test-`
 
 Now, to install all required JavaScript dependencies, type `make install` <br>
 
