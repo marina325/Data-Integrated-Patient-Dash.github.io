@@ -22,13 +22,28 @@ NodeJS is required to run required javascript files.<br>
 If you're running an IDE such as VSCode, restart it in order for nodejs to begin working. <br>
 
 #### MacOS
-Now, to install all required dependencies, run: 'make install' <br>
+Creating a virtual environment and installing Python dependencies:<br>
+In the main directory ("Data-Integrated-Patient-Dash.github.io"), type source venv/Scripts/activate in order to enter the virtual environment.  You'll know because the left of your terminal should now have something like '(venv)'.<br>
+From here type pip install -r requirements.txt in order to install all required Python dependencies. <br>
+
+Now, to install all required JavaScript dependencies, run: 'make install' <br>
 
 ##### Running the Dashboard
 Once everything is installed we can run 'make start' in order to run the dashboard with the patient data we currently have.
 
 #### Windows
-Now, to install all required dependencies, once in the correct directory("Data-Integrated-Patient-Dash.github.io") cd 'dashboard-website' then type 'npm install'. This should install all required dependencies <br>
+Creating a virtual environment and installing Python dependencies:<br>
+
+
+In the main directory ("Data-Integrated-Patient-Dash.github.io"), type venv\Scripts\Activate.ps1 (if using powershell) or venv\Scripts\Activate.bat (if using cmd) <br>
+If there is an issue running this code, you need to change your ExecutionPolicy. While this can be dangerous if done incorrectly, this guide will help you do it safely: <br>
+In your terminal, type Set-ExecutionPolicy Unrestricted -Scope Process in order to run your venv. press enter <br>
+Next, type venv\Scripts\Activate.ps1 or venv\Scripts\Activate.bat and press enter in order to create your virtual environment.<br>
+Finally, type Set-ExecutionPolicy Default -Scope Process to reset your ExecutionPolicy to default settings.<br>
+You should be in the virtual environment. You'll know because the left of your terminal should now have something like '(venv)'. <br>
+From here type pip install -r requirements.txt in order to install all required Python dependencies. <br>
+
+Now, to install all required JavaScript dependencies, once in the correct directory("Data-Integrated-Patient-Dash.github.io") cd 'dashboard-website' then type 'npm install'. This should install all required dependencies <br>
 
 ##### Running the Dashboard 
 Once everything is installed we can run 'npm start' in order to run the dashboard with the patient data we currently have.<br>
