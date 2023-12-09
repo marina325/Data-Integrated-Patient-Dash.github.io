@@ -23,13 +23,13 @@ If you're running an IDE such as VSCode, restart it in order for nodejs to begin
 
 #### MacOS
 Creating a virtual environment and installing Python dependencies:<br>
-In the main directory ("Data-Integrated-Patient-Dash.github.io"), type source venv/Scripts/activate in order to enter the virtual environment.  You'll know because the left of your terminal should now have something like '(venv)'.<br>
+In the main directory ("Data-Integrated-Patient-Dash.github.io"), type `source venv/Scripts/activate` and press enter in order to enter the virtual environment.<br>  You'll know because the left of your terminal should now have something like '(venv)'.<br>
 From here type pip install -r requirements.txt in order to install all required Python dependencies. <br>
 
-Now, to install all required JavaScript dependencies, run: 'make install' <br>
+Now, to install all required JavaScript dependencies, type: 'make install' <br>
 
 ##### Running the Dashboard
-Once everything is installed we can run 'make start' in order to run the dashboard with the patient data we currently have.
+Once everything is installed we can run 'make start' in order to run the dashboard with the patient data we currently have. <br>
 
 #### Windows
 Creating a virtual environment and installing Python dependencies:<br>
