@@ -11,7 +11,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero newTeamRef={newTeamRef} dashboardRef={dashboardRef}/>
-      <Diaries></Diaries>
+      {<Diaries></Diaries>}
       <NewTeam ref={newTeamRef}/>
     </AnimationRevealPage>
   );
