@@ -19,7 +19,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/thank-you" element={<ThankYouPage />} />
+         
           <Route path="/" element={<MainLandingPage />} />
           <Route path="/About-Our-Project" element={<AboutOurProject />} />
         </Routes>
