@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-//eslint-disable-next-line
 import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-
 import defaultCardImage from "images/shield-icon.svg";
-
-
 import MelissaProfile from "images/MelissaProfile.png"
 import BenProfile from "images/BenProfile.png"
 
