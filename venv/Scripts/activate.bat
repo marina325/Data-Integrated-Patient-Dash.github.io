@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\oweng\OneDrive\Documents\GitHub\Data-Integrated-Patient-Dash.github.io\venv
+set VIRTUAL_ENV=C:\Users\bryan\OneDrive\Desktop\DSC180A-Project\Data-Integrated-Patient-Dash.github.io\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
