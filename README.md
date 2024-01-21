@@ -15,13 +15,13 @@ In order to properly run this code, you must copy this repository into a local m
 
  *** All code snippets are contained within single quotes, for instance: 'example code' ***
 
-### Docker *recommended*
+### Docker (*recommended*)
 Download Docker Desktop here: https://www.docker.com/products/docker-desktop/ <br>
 Once it is downloaded and docker is running, return to the terminal and type `docker build -t med-dash`. This will create a Docker Image named "med-dash".<br>
 Once these files finish downloading, run `docker run --rm -itp 8000:3000 med-dash`. This code runs the med-dash image on port 8000. <br>
 To access this page, open a web browser and type `localhost:8000`. You should be good to go!<br>
 
-## Alternative Options *not recommended* 
+## Alternative Options (*not recommended*) 
 ### NodeJS
 Node JS is currently required to run the dashboard locally. <br> If NodeJS is not currently in your local system head to the following website https://nodejs.org/en/download and download the most current version of nodejs for your system.<br> 
 NodeJS is required to run required javascript files.<br>
