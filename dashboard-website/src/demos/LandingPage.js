@@ -17,6 +17,7 @@ import TableauEmbedOura5 from "components/TableauEmbedOura5";
 // import TableauEmbedOuraHeartRate from "components/TableauEmbedOuraHeartRate";
 import sleepIllustrationImageSrc from "images/sleep.png"
 import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
+import Signup from "pages/Signup";
 
 
 export default () => {
@@ -50,6 +51,7 @@ export default () => {
       />
       {/* <Testimonial /> */}
       <FAQ />
+      <Signup />
       {/* <Footer /> */}
     </AnimationRevealPage>
   );
