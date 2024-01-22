@@ -1,20 +1,20 @@
 import { React, useRef }  from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
+import Hero from "components/hero/Overview.js";
 import OurTeam from "components/features/OurTeam";
-import MainFeature from "components/features/TwoColWithButton.js";
+import MainFeature from "components/features/GoodSleepFeature.js";
 import GoodDietFeature from "components/features/GoodDietFeature.js";
-import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
-import Footer from "components/footers/Footer.js";
-import TableauEmbed from "components/TableauEmbed.js";
-import TableauScoresEmbed from "components/TableauScoresEmbed";
+import FAQ from "components/faqs/Questions.js";
+// import Footer from "components/footers/Footer.js";
+// import TableauEmbed from "components/TableauEmbed.js";
+// import TableauScoresEmbed from "components/TableauScoresEmbed";
 import TableauEmbedAH from "components/TableauEmbedAH"
 import TableauEmbedOura1 from "components/TableauEmbedOura1";
 import TableauEmbedOura2 from "components/TableauEmbedOura2";
 import TableauEmbedOura3 from "components/TableauEmbedOura3";
 import TableauEmbedOura4 from "components/TableauEmbedOura4";
 import TableauEmbedOura5 from "components/TableauEmbedOura5";
-import TableauEmbedOuraHeartRate from "components/TableauEmbedOuraHeartRate";
+// import TableauEmbedOuraHeartRate from "components/TableauEmbedOuraHeartRate";
 import sleepIllustrationImageSrc from "images/sleep.png"
 import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
